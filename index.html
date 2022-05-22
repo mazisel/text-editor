@@ -1,0 +1,58 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table class="btns">
+        <tr>
+            <td>
+                <button id="up2" class="test">test</button>
+            </td>
+            <td>
+                <img id="up" class="icon" src="icon\up.png" alt="up">
+            </td>
+            <td>
+                <img id="down" class="icon" src="icon\down.png" alt="down">
+            </td>
+            <td>
+                <label for="color">Yazı Rengi</label>
+                <select onmousedown="this.value='';" onchange="changecolor(this.value)" name="color" id="color">
+                <option value="black">Siyah</option>
+                <option value="red">Kırmızı</option>
+                <option value="blue">Mavi</option>
+                <option value="green">Yeşil</option>
+            </select>
+            </td>
+            <td>
+                <label for="texttype">Yazı Tipi</label>
+                <select onmousedown="this.value='normal';" onchange="changetype(this.value)" name="texttype" id="texttype">
+                <option value="underline">Altı Çizili</option>
+                <option value="overline">Üstü Çizili</option>
+                <option value="bold">Kalın</option>
+                <option value="italic">İtalik</option>
+            </select>
+            </td>
+            <td>
+                <label for="hiza">Metin Hizalama</label>
+                <select name="texthiza" id="texthiza">
+                   <option value="left">Sola</option>
+                   <option value="center">Ortala</option>
+                   <option value="right">Sağa</option>
+               </select>
+            </td>
+
+        </tr>
+    </table>
+    <div class="textarea">
+        <textarea id="textareaid" rows="40" cols="100"></textarea>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

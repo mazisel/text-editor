@@ -1,0 +1,25 @@
+body {
+    background-color: whitesmoke
+}
+
+.icon {
+    margin: 10px;
+    width: 30px;
+}
+
+.btns {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.textarea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#textareaid {
+    resize: none;
+    font-size: 12px;
+}
